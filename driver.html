@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title> MAZE </title>
+  </head>
+<body style = "background-color:red;">
+
+  <body onload = "main()">
+    <canvas id="webgl"  width="400" height="400" style="position: absolute; z-index: 0">
+      Please use a browser that supports "canvas"
+    </canvas>
+    <canvas id="hud" width="130" height="70" style="position: absolute; z-index: 1">
+    </canvas>
+    <canvas id="gameover"  width="400" height="400" style="position: absolute; z-index: 0">
+    </canvas>
+    <canvas id="doorMessage"  width="400" height="400" style="position: absolute; z-index: 0">
+    </canvas>
+    <canvas id="goalMessage"  width="400" height="400" style="position: absolute; z-index: 0">
+    </canvas>
+    <audio id="audio" controls style="display:none">
+  <source src="sound/walking.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+    <audio id="bgm" controls style="display:none">
+  <source src="sound/gtaBGM.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+    <audio id="endingSong" controls style="display:none">
+  <source src="sound/ending.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+    <audio id="gameoverSound" controls style="display:none">
+  <source src="sound/gameover.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+    <br>
+        <br>
+            <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    <br>    
+ <h2 style = "color:white;">Reach the lava boi to beat the maze.</h1>
+ <h4 style = "color:white;">Avoid lava and finish in under 300 moves.</h1>
+<div style="color:white;">***play with sound for the best experience***</div>
+This is the link to the document explaining the project: <A HREF="160finaldoc.pdf">pdf</A>
+    
+
+    <div style = "color:white;">CONTROLS:</div>
+
+<!-- <A HREF="CMPS160%Project%Document%-%Nikhil%Dodd,%Kurt%Higa.pdf">project information</A>
+ -->
+<LI style="color:white;">W moves camera forward.</LI>
+<LI style="color:white;">A moves camera to the left</LI>
+<LI style="color:white;">S moves camera backwards</LI>
+<LI style="color:white;">D moves camera to the right.</LI>
+<LI style="color:white;">P is for cheaters. Use it to see the maze.</LI>
+<LI style="color:white;">J is another cheater button. Use it to float and see what's ahead!</LI>
+<LI style="color:white;">Camera can be rotated with the arrow keys.</LI>
+
+</UL>
+
+    <!-- Include external libs -->
+    <script src = "lib/webgl-utils.js"></script>
+    <script src = "lib/webgl-render.js"></script>
+    <script src = "lib/webgl-debug.js"></script>
+    <script src = "lib/webgl-loader.js"></script>
+    <script src = "lib/cuon-utils.js"></script>
+    <script src = "lib/cuon-matrix.js"></script>
+
+    <!-- Include shaders -->
+    <script src = "src/graphics/shaders/shader.js"></script>
+    <script src = "src/graphics/shaders/asg4.js"></script>
+
+    <!-- Include Base code -->
+    <script src = "src/graphics/geometry/vertex.js"></script>
+    <script src = "src/graphics/geometry/geometry.js"></script>
+    <script src = "src/graphics/geometry/shapes/square.js"></script>
+    <script src = "src/graphics/geometry/shapes/walls.js"></script>
+    <script src = "src/graphics/geometry/shapes/skyCube.js"></script>
+    <script src = "src/graphics/geometry/shapes/sphere.js"></script>
+    <script src = "src/graphics/geometry/shapes/cube.js"></script>
+    <script src = "src/graphics/geometry/shapes/hud.js"></script>
+    <script src = "src/graphics/renderer.js"></script>
+    <script src = "src/graphics/scene.js"></script>
+    <script src = "src/graphics/camera.js"></script>
+    <script src = "src/graphics/light.js"></script>
+    <script src = "src/main.js"></script>
+    <script src = "src/input.js"></script>
+  </body>
+</html>
