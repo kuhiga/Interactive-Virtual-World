@@ -4,8 +4,6 @@ var isGameOver = false;
  * Specifies a WebGL render. Used alongside Spring 2019 CMPS 160's Scene,
  * Camera, Geometry, and other subclasses.
  *
- * @author Lucas N. Ferreira
- * @this {Renderer}
  */
 class Renderer {
    /**
