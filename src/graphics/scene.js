@@ -1,8 +1,6 @@
 /**
  * Specifies a Scene full of Geometry.
  *
- * @author Lucas N. Ferreira
- * @this {Scene}
  */
 class Scene {
   /**
