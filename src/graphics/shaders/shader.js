@@ -1,8 +1,5 @@
  /**
  * Specifies a shading program.
- *
- * @author Lucas N. Ferreira
- * @this {Shader}
  */
 class Shader {
    /**
