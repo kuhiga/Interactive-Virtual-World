@@ -1,9 +1,4 @@
-/**
- * Specifies a Camera that can Dolly/Truck and Tilt/Pan.
- *
- * @author Lucas N. Fer
- * @this {Renderer}
- */
+
  var huh = 0; //0 is perspective, 1 is ortho
  var pop = 0;
 class Camera {
